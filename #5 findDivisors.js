@@ -11,7 +11,7 @@
 function findDivisors(num) {
   let minGap = num
   let result = []
-  for (let i = 1; i < num; i++) {
+  for (let i = 1; i <= num; i++) {
     for (let k = 1; k <= 2; k++) {
       console.log('проверяем число ' + (num + k) + '/' + i + '=' + (num + k) / i)
       if ((num + k) % i === 0) {
@@ -32,5 +32,3 @@ function findDivisors(num) {
   }
   return result
 }
-
-findDivisors(1)

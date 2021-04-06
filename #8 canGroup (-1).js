@@ -24,7 +24,7 @@ function canGroup(cards, w) {
     } else {
       for (let k = 0; k < w - 1; k++) {
         console.log('сравниваем ' + cards[i + k] + ' и ' + cards[i + k + 1])
-        if (cards[i + k + 1] - cards[i + k] == 1) {
+        if (cards[i + k + 1] - cards[i + k] === 1) {
           res = true
         } else {
           res = false
@@ -48,5 +48,3 @@ function canGroup(cards, w) {
   console.log(nabor)
   return res
 }
-
-canGroup([1, 2, 3, 6, 2, 3, 4, 7, 8], 3)
